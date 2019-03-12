@@ -1,0 +1,37 @@
+# TensorFlow: Configure with Bazel
+cd tensorflow
+./configure
+
+# Compile libdeepspeech.so & generate_trie
+ln -s ../DeepSpeech/native_client ./
+bazel build --config=monolithic -c opt --copt=-O3 --copt="-D_GLIBCXX_USE_CXX11_ABI=0" --copt=-fvisibility=hidden //native_client:libdeepspeech.so //native_client:generate_trie //tensorflow/contrib/util:convert_graphdef_memmapped_format
+
+# Compile Language Bindings
+TFDIR=$PWD
+cd ../DeepSpeech/native_client
+make deepspeech
+
+# Installing your own Binaries
+PREFIX=/usr/local sudo make install
+
+# Install Python bindings
+cd native_client/python
+make bindings
+pip install dist/deepspeech*
+
+# Install the CTC decoder package
+cd native_client/ctcdecode
+make bindings NUM_PROCESSES=8
+pip install dist/*.whl
+
+# Android ARMv7
+bazel build --config=monolithic --config=android --config=android_arm --define=runtime=tflite --action_env ANDROID_NDK_API_LEVEL=21 --cxxopt=-std=c++11 --copt=-D_GLIBCXX_USE_C99 //native_client:libdeepspeech.so
+
+cd ../DeepSpeech/native_client
+ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflow/ TARGET_ARCH_ABI=armeabi-v7a
+
+# Android ARM64
+bazel build --config=monolithic --config=android --config=android_arm64 --define=runtime=tflite --action_env ANDROID_NDK_API_LEVEL=21 --cxxopt=-std=c++11 --copt=-D_GLIBCXX_USE_C99 //native_client:libdeepspeech.so
+
+cd ../DeepSpeech/native_client
+ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflow/ TARGET_ARCH_ABI=arm64-v8a
