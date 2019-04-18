@@ -9,7 +9,7 @@
 /logs
 /exports
 /data/ldc93s1
-/data/ldc93s1-tc/
+/data/ldc93s1-tc
 /native_client/setup.cfg
 /native_client/build
 /native_client/*.egg-info
