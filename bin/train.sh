@@ -44,4 +44,5 @@ time python -u ./DeepSpeech.py \
 
 time python -u ./DeepSpeech.py --checkpoint_dir ~/ds/checkpoint --n_hidden 2048 --nouse_seq_length --export_dir ~/ds/models
 time python -u ./DeepSpeech.py --checkpoint_dir ~/ds/checkpoint --n_hidden 2048 --nouse_seq_length --export_tflite --export_dir ~/ds/models
+time ~/vobs/Mozilla/DeepSpeech/native_client/convert_graphdef_memmapped_format --in_graph=~/ds/models/output_graph.pb --out_graph=~/ds/models/output_graph.pbmm
 
