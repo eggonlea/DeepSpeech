@@ -2,6 +2,8 @@ set -x
 
 EPOCH=${1:-1}
 
+N_HIDDEN=2048
+
 TRAIN_FILES=\
 /srv/corpus/librivox/librivox-train-clean-100.csv,\
 /srv/corpus/librivox/librivox-train-clean-360.csv,\
@@ -31,7 +33,7 @@ time python -u ./DeepSpeech.py \
 	--test_files ${TEST_FILES} \
 	--feature_cache ${CACHE_PATH} \
 	--epochs ${EPOCH} \
-	--n_hidden 2048 \
+	--n_hidden ${N_HIDDEN} \
 	--learning_rate 0.0001 \
 	--dropout_rate 0.2 \
 	--train_batch_size 24 \
@@ -41,8 +43,4 @@ time python -u ./DeepSpeech.py \
 	--validation_step 1 \
 	--log_level 1 \
 	--summary_secs 60
-
-time python -u ./DeepSpeech.py --checkpoint_dir ~/ds/checkpoint --n_hidden 2048 --nouse_seq_length --export_dir ~/ds/models
-time python -u ./DeepSpeech.py --checkpoint_dir ~/ds/checkpoint --n_hidden 2048 --nouse_seq_length --export_tflite --export_dir ~/ds/models
-time ~/vobs/Mozilla/DeepSpeech/native_client/convert_graphdef_memmapped_format --in_graph=~/ds/models/output_graph.pb --out_graph=~/ds/models/output_graph.pbmm
 
