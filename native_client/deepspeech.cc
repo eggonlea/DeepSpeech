@@ -110,7 +110,7 @@ using std::vector;
    the corresponding transcription.
 */
 struct StreamingState {
-  vector<float> accumulated_logits;
+  vector<float> accumulated_logits; // Seems like this is no longer necessary?
   vector<float> audio_buffer;
   float last_sample; // used for preemphasis
   vector<float> mfcc_buffer;
@@ -141,6 +141,7 @@ struct ModelState {
   unsigned int ncontext;
   Alphabet* alphabet;
   Scorer* scorer;
+  DecoderState* decoder_state;
   unsigned int beam_width;
   unsigned int n_steps;
   unsigned int mfcc_feats_per_timestep;
@@ -159,12 +160,9 @@ struct ModelState {
    * @brief Perform decoding of the logits, using basic CTC decoder or
    *        CTC decoder with KenLM enabled
    *
-   * @param logits         Flat matrix of logits, of size:
-   *                       n_frames * batch_size * num_classes
-   *
    * @return String representing the decoded text.
    */
-  char* decode(vector<float>& logits);
+  char* decode();
 
   /**
    * @brief Do a single inference step in the acoustic model, with:
@@ -218,6 +216,7 @@ ModelState::~ModelState()
 
   delete scorer;
   delete alphabet;
+  delete decoder_state;
 }
 
 void
@@ -250,7 +249,7 @@ StreamingState::feedAudioContent(const short* buffer,
 char*
 StreamingState::intermediateDecode()
 {
-  return model->decode(accumulated_logits);
+  return model->decode();
 }
 
 char*
@@ -269,7 +268,7 @@ StreamingState::finishStream()
     processBatch(batch_buffer, batch_buffer.size()/model->mfcc_feats_per_timestep);
   }
 
-  return model->decode(accumulated_logits);
+  return model->decode();
 }
 
 void
@@ -334,7 +333,26 @@ StreamingState::processMfccWindow(const vector<float>& buf)
 void
 StreamingState::processBatch(const vector<float>& buf, unsigned int n_steps)
 {
-  model->infer(buf.data(), n_steps, accumulated_logits);
+  vector<float> logits;
+  model->infer(buf.data(), n_steps, logits);
+
+  const int cutoff_top_n = 40;
+  const double cutoff_prob = 1.0;
+  const size_t num_classes = model->alphabet->GetSize() + 1; // +1 for blank
+  const int n_frames = logits.size() / (BATCH_SIZE * num_classes);
+
+  // Convert logits to double
+  vector<double> inputs(logits.begin(), logits.end());
+
+  decoder_next(inputs.data(),
+               *model->alphabet,
+               model->decoder_state,
+               n_frames,
+               num_classes,
+               cutoff_prob,
+               cutoff_top_n,
+               model->beam_width,
+               model->scorer);
 }
 
 void
@@ -410,20 +428,9 @@ ModelState::infer(const float* aMfcc, unsigned int n_frames, vector<float>& logi
 }
 
 char*
-ModelState::decode(vector<float>& logits)
+ModelState::decode()
 {
-  const int cutoff_top_n = 40;
-  const double cutoff_prob = 1.0;
-  const size_t num_classes = alphabet->GetSize() + 1; // +1 for blank
-  const int n_frames = logits.size() / (BATCH_SIZE * num_classes);
-
-  // Convert logits to double
-  vector<double> inputs(logits.begin(), logits.end());
-
-  // Vector of <probability, Output> pairs
-  vector<Output> out = ctc_beam_search_decoder(
-    inputs.data(), n_frames, num_classes, *alphabet, beam_width,
-    cutoff_prob, cutoff_top_n, scorer);
+  vector<Output> out = decoder_decode(decoder_state, *alphabet, beam_width, scorer);
 
   return strdup(alphabet->LabelsToString(out[0].tokens).c_str());
 }
@@ -684,6 +691,9 @@ DS_SetupStream(ModelState* aCtx,
   ctx->batch_buffer.reserve(aCtx->n_steps * aCtx->mfcc_feats_per_timestep);
 
   ctx->model = aCtx;
+
+  DecoderState *params = decoder_init(*aCtx->alphabet, num_classes, aCtx->scorer);
+  aCtx->decoder_state = params;
 
   *retval = ctx.release();
 #ifndef USE_TFLITE
