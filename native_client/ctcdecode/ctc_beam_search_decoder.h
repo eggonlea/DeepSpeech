@@ -18,7 +18,7 @@
  *                 n-gram language model scoring and word insertion term.
  *                 Default null, decoding the input sample without scorer.
  * Return:
- *     A struct containing word prefixes and state variables.
+ *     A struct containing prefixes and state variables.
 */
 DecoderState* decoder_init(const Alphabet &alphabet,
                            int class_dim,
@@ -62,7 +62,8 @@ void decoder_next(const double *probs,
  *                 n-gram language model scoring and word insertion term.
  *                 Default null, decoding the input sample without scorer.
  * Return:
- *     A struct containing word prefixes and state variables.
+ *     A vector where each element is a pair of score and decoding result,
+ *     in descending order.
 */
 std::vector<Output> decoder_decode(DecoderState *state,
                                    const Alphabet &alphabet,

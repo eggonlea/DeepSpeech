@@ -104,9 +104,9 @@ using std::vector;
    API. When audio_buffer is full, features are computed from it and pushed to
    mfcc_buffer. When mfcc_buffer is full, the timestep is copied to batch_buffer.
    When batch_buffer is full, we do a single step through the acoustic model
-   and accumulate results in StreamingState::accumulated_logits.
+   and accumulate results in the DecoderState structure.
 
-   When fininshStream() is called, we decode the accumulated logits and return
+   When finishStream() is called, we decode the accumulated logits and return
    the corresponding transcription.
 */
 struct StreamingState {
@@ -216,7 +216,10 @@ ModelState::~ModelState()
 
   delete scorer;
   delete alphabet;
-  delete decoder_state;
+  if (decoder_state) {
+    delete decoder_state;
+    decoder_state = nullptr;
+  }
 }
 
 void

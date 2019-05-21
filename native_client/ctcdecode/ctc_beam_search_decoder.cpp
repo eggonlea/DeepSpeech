@@ -196,3 +196,58 @@ std::vector<Output> decoder_decode(DecoderState *state,
 
   return get_beam_search_result(state->prefixes, beam_size);
 }
+
+std::vector<Output> ctc_beam_search_decoder(
+    const double *probs,
+    int time_dim,
+    int class_dim,
+    const Alphabet &alphabet,
+    size_t beam_size,
+    double cutoff_prob,
+    size_t cutoff_top_n,
+    Scorer *ext_scorer) {
+  DecoderState *state = decoder_init(alphabet, class_dim, ext_scorer);
+  decoder_next(probs, alphabet, state, time_dim, class_dim, cutoff_prob, cutoff_top_n, beam_size, ext_scorer);
+  return decoder_decode(state, alphabet, beam_size, ext_scorer);
+}
+
+ std::vector<std::vector<Output>>
+ctc_beam_search_decoder_batch(
+    const double *probs,
+    int batch_size,
+    int time_dim,
+    int class_dim,
+    const int* seq_lengths,
+    int seq_lengths_size,
+    const Alphabet &alphabet,
+    size_t beam_size,
+    size_t num_processes,
+    double cutoff_prob,
+    size_t cutoff_top_n,
+    Scorer *ext_scorer) {
+  VALID_CHECK_GT(num_processes, 0, "num_processes must be nonnegative!");
+  VALID_CHECK_EQ(batch_size, seq_lengths_size, "must have one sequence length per batch element");
+  // thread pool
+  ThreadPool pool(num_processes);
+
+   // enqueue the tasks of decoding
+  std::vector<std::future<std::vector<Output>>> res;
+  for (size_t i = 0; i < batch_size; ++i) {
+    res.emplace_back(pool.enqueue(ctc_beam_search_decoder,
+                                  &probs[i*time_dim*class_dim],
+                                  seq_lengths[i],
+                                  class_dim,
+                                  alphabet,
+                                  beam_size,
+                                  cutoff_prob,
+                                  cutoff_top_n,
+                                  ext_scorer));
+  }
+
+   // get decoding results
+  std::vector<std::vector<Output>> batch_results;
+  for (size_t i = 0; i < batch_size; ++i) {
+    batch_results.emplace_back(res[i].get());
+  }
+  return batch_results;
+} 
