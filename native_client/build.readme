@@ -28,10 +28,10 @@ pip install dist/*.whl
 bazel build --config=monolithic --config=android --config=android_arm --define=runtime=tflite --action_env ANDROID_NDK_API_LEVEL=21 --cxxopt=-std=c++11 --copt=-D_GLIBCXX_USE_C99 //native_client:libdeepspeech.so
 
 cd ../DeepSpeech/native_client
-$ANDROID_NDK_HOME/ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflow/ TARGET_ARCH_ABI=armeabi-v7a
+ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflow/ TARGET_ARCH_ABI=armeabi-v7a
 
 # Android ARM64
 bazel build --config=monolithic --config=android --config=android_arm64 --define=runtime=tflite --action_env ANDROID_NDK_API_LEVEL=21 --cxxopt=-std=c++11 --copt=-D_GLIBCXX_USE_C99 //native_client:libdeepspeech.so
 
 cd ../DeepSpeech/native_client
-$ANDROID_NDK_HOME/ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflowx/ TARGET_ARCH_ABI=arm64-v8a
+ndk-build APP_PLATFORM=android-21 APP_BUILD_SCRIPT=$(pwd)/Android.mk NDK_PROJECT_PATH=$(pwd) APP_STL=c++_shared TFDIR=$(pwd)/../../tensorflow/ TARGET_ARCH_ABI=arm64-v8a
