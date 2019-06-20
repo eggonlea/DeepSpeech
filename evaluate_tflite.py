@@ -32,10 +32,10 @@ LM_BETA = 1.85
 N_FEATURES = 26
 N_CONTEXT = 9
 
-def tflite_worker(model, alphabet, lm, trie, queue_in, queue_out, gpu_mask):
+def tflite_worker(args, queue_in, queue_out, gpu_mask):
     os.environ['CUDA_VISIBLE_DEVICES'] = str(gpu_mask)
-    ds = Model(model, N_FEATURES, N_CONTEXT, alphabet, BEAM_WIDTH)
-    ds.enableDecoderWithLM(alphabet, lm, trie, LM_ALPHA, LM_BETA)
+    ds = Model(args.model, N_FEATURES, N_CONTEXT, args.alphabet, args.beam_width)
+    ds.enableDecoderWithLM(args.alphabet, args.lm, args.trie, args.lm_alpha, args.lm_beta)
 
     while True:
         msg = queue_in.get()
@@ -63,6 +63,12 @@ def main():
                         help='Path to the language model binary file')
     parser.add_argument('--trie', required=True,
                         help='Path to the language model trie file created with native_client/generate_trie')
+    parser.add_argument('--beam_width', required=False, default=BEAM_WIDTH, type=int,
+                        help='Beam width for CTC decoding search')
+    parser.add_argument('--lm_alpha', required=False, default=LM_ALPHA, type=float,
+                        help='Alpha hyperparameter of CTC decoder for LM weight')
+    parser.add_argument('--lm_beta', required=False, default=LM_BETA, type=float,
+                        help='Beta hyperparameter of CTC decoder for word insertion bonus')
     parser.add_argument('--csv', required=True,
                         help='Path to the CSV source file')
     parser.add_argument('--proc', required=False, default=cpu_count(), type=int,
@@ -77,7 +83,7 @@ def main():
 
     processes = []
     for i in range(args.proc):
-        worker_process = Process(target=tflite_worker, args=(args.model, args.alphabet, args.lm, args.trie, work_todo, work_done, i), daemon=True, name='tflite_process_{}'.format(i))
+        worker_process = Process(target=tflite_worker, args=(args, work_todo, work_done, i), daemon=True, name='tflite_process_{}'.format(i))
         worker_process.start()        # Launch reader() as a separate python process
         processes.append(worker_process)
 

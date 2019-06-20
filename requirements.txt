@@ -16,6 +16,7 @@ bs4
 requests
 librosa
 soundfile
+num2words
 
 # Miscellaneous scripts
 paramiko >= 2.1

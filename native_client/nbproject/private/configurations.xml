@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="ctcdecode">
+        <df name="third_party">
+          <df name="openfst-1.6.7">
+            <df name="m4">
+            </df>
+            <df name="src">
+              <df name="bin">
+                <in>fstarcsort-main.cc</in>
+                <in>fstarcsort.cc</in>
+                <in>fstclosure-main.cc</in>
+                <in>fstclosure.cc</in>
+                <in>fstcompile-main.cc</in>
+                <in>fstcompile.cc</in>
+                <in>fstcompose-main.cc</in>
+                <in>fstcompose.cc</in>
+                <in>fstconcat-main.cc</in>
+                <in>fstconcat.cc</in>
+                <in>fstconnect-main.cc</in>
+                <in>fstconnect.cc</in>
+                <in>fstconvert-main.cc</in>
+                <in>fstconvert.cc</in>
+                <in>fstdeterminize-main.cc</in>
+                <in>fstdeterminize.cc</in>
+                <in>fstdifference-main.cc</in>
+                <in>fstdifference.cc</in>
+                <in>fstdisambiguate-main.cc</in>
+                <in>fstdisambiguate.cc</in>
+                <in>fstdraw-main.cc</in>
+                <in>fstdraw.cc</in>
+                <in>fstencode-main.cc</in>
+                <in>fstencode.cc</in>
+                <in>fstepsnormalize-main.cc</in>
+                <in>fstepsnormalize.cc</in>
+                <in>fstequal-main.cc</in>
+                <in>fstequal.cc</in>
+                <in>fstequivalent-main.cc</in>
+                <in>fstequivalent.cc</in>
+                <in>fstinfo-main.cc</in>
+                <in>fstinfo.cc</in>
+                <in>fstintersect-main.cc</in>
+                <in>fstintersect.cc</in>
+                <in>fstinvert-main.cc</in>
+                <in>fstinvert.cc</in>
+                <in>fstisomorphic-main.cc</in>
+                <in>fstisomorphic.cc</in>
+                <in>fstmap-main.cc</in>
+                <in>fstmap.cc</in>
+                <in>fstminimize-main.cc</in>
+                <in>fstminimize.cc</in>
+                <in>fstprint-main.cc</in>
+                <in>fstprint.cc</in>
+                <in>fstproject-main.cc</in>
+                <in>fstproject.cc</in>
+                <in>fstprune-main.cc</in>
+                <in>fstprune.cc</in>
+                <in>fstpush-main.cc</in>
+                <in>fstpush.cc</in>
+                <in>fstrandgen-main.cc</in>
+                <in>fstrandgen.cc</in>
+                <in>fstrelabel-main.cc</in>
+                <in>fstrelabel.cc</in>
+                <in>fstreplace-main.cc</in>
+                <in>fstreplace.cc</in>
+                <in>fstreverse-main.cc</in>
+                <in>fstreverse.cc</in>
+                <in>fstreweight-main.cc</in>
+                <in>fstreweight.cc</in>
+                <in>fstrmepsilon-main.cc</in>
+                <in>fstrmepsilon.cc</in>
+                <in>fstshortestdistance-main.cc</in>
+                <in>fstshortestdistance.cc</in>
+                <in>fstshortestpath-main.cc</in>
+                <in>fstshortestpath.cc</in>
+                <in>fstsymbols-main.cc</in>
+                <in>fstsymbols.cc</in>
+                <in>fstsynchronize-main.cc</in>
+                <in>fstsynchronize.cc</in>
+                <in>fsttopsort-main.cc</in>
+                <in>fsttopsort.cc</in>
+                <in>fstunion-main.cc</in>
+                <in>fstunion.cc</in>
+              </df>
+              <df name="extensions">
+                <df name="compact">
+                  <in>compact16_acceptor-fst.cc</in>
+                  <in>compact16_string-fst.cc</in>
+                  <in>compact16_unweighted-fst.cc</in>
+                  <in>compact16_unweighted_acceptor-fst.cc</in>
+                  <in>compact16_weighted_string-fst.cc</in>
+                  <in>compact64_acceptor-fst.cc</in>
+                  <in>compact64_string-fst.cc</in>
+                  <in>compact64_unweighted-fst.cc</in>
+                  <in>compact64_unweighted_acceptor-fst.cc</in>
+                  <in>compact64_weighted_string-fst.cc</in>
+                  <in>compact8_acceptor-fst.cc</in>
+                  <in>compact8_string-fst.cc</in>
+                  <in>compact8_unweighted-fst.cc</in>
+                  <in>compact8_unweighted_acceptor-fst.cc</in>
+                  <in>compact8_weighted_string-fst.cc</in>
+                </df>
+                <df name="compress">
+                  <in>compress-script.cc</in>
+                  <in>fstcompress.cc</in>
+                  <in>fstrandmod.cc</in>
+                </df>
+                <df name="const">
+                  <in>const16-fst.cc</in>
+                  <in>const64-fst.cc</in>
+                  <in>const8-fst.cc</in>
+                </df>
+                <df name="far">
+                  <in>far-class.cc</in>
+                  <in>farcompilestrings.cc</in>
+                  <in>farcreate.cc</in>
+                  <in>farequal.cc</in>
+                  <in>farextract.cc</in>
+                  <in>farinfo.cc</in>
+                  <in>farisomorphic.cc</in>
+                  <in>farprintstrings.cc</in>
+                  <in>farscript.cc</in>
+                  <in>getters.cc</in>
+                  <in>script-impl.cc</in>
+                  <in>stlist.cc</in>
+                  <in>strings.cc</in>
+                  <in>sttable.cc</in>
+                </df>
+                <df name="linear">
+                  <in>fstlinear.cc</in>
+                  <in>fstloglinearapply.cc</in>
+                  <in>linear-classifier-fst.cc</in>
+                  <in>linear-tagger-fst.cc</in>
+                  <in>linearscript.cc</in>
+                </df>
+                <df name="lookahead">
+                  <in>arc_lookahead-fst.cc</in>
+                  <in>ilabel_lookahead-fst.cc</in>
+                  <in>olabel_lookahead-fst.cc</in>
+                </df>
+                <df name="mpdt">
+                  <in>mpdtcompose.cc</in>
+                  <in>mpdtexpand.cc</in>
+                  <in>mpdtinfo.cc</in>
+                  <in>mpdtreverse.cc</in>
+                  <in>mpdtscript.cc</in>
+                </df>
+                <df name="ngram">
+                  <in>bitmap-index.cc</in>
+                  <in>ngram-fst.cc</in>
+                  <in>nthbit.cc</in>
+                </df>
+                <df name="pdt">
+                  <in>getters.cc</in>
+                  <in>pdtcompose.cc</in>
+                  <in>pdtexpand.cc</in>
+                  <in>pdtinfo.cc</in>
+                  <in>pdtreplace.cc</in>
+                  <in>pdtreverse.cc</in>
+                  <in>pdtscript.cc</in>
+                  <in>pdtshortestpath.cc</in>
+                </df>
+                <df name="python">
+                  <in>pywrapfst.cc</in>
+                </df>
+                <df name="special">
+                  <in>phi-fst.cc</in>
+                  <in>rho-fst.cc</in>
+                  <in>sigma-fst.cc</in>
+                </df>
+              </df>
+              <df name="include">
+                <df name="fst">
+                  <df name="extensions">
+                    <df name="compress">
+                      <in>compress-script.h</in>
+                      <in>compress.h</in>
+                      <in>elias.h</in>
+                      <in>gzfile.h</in>
+                      <in>randmod.h</in>
+                    </df>
+                    <df name="far">
+                      <in>compile-strings.h</in>
+                      <in>create.h</in>
+                      <in>equal.h</in>
+                      <in>extract.h</in>
+                      <in>far-class.h</in>
+                      <in>far.h</in>
+                      <in>farlib.h</in>
+                      <in>farscript.h</in>
+                      <in>getters.h</in>
+                      <in>info.h</in>
+                      <in>isomorphic.h</in>
+                      <in>print-strings.h</in>
+                      <in>script-impl.h</in>
+                      <in>stlist.h</in>
+                      <in>sttable.h</in>
+                    </df>
+                    <df name="linear">
+                      <in>linear-fst-data-builder.h</in>
+                      <in>linear-fst-data.h</in>
+                      <in>linear-fst.h</in>
+                      <in>linearscript.h</in>
+                      <in>loglinear-apply.h</in>
+                      <in>trie.h</in>
+                    </df>
+                    <df name="mpdt">
+                      <in>compose.h</in>
+                      <in>expand.h</in>
+                      <in>info.h</in>
+                      <in>mpdt.h</in>
+                      <in>mpdtlib.h</in>
+                      <in>mpdtscript.h</in>
+                      <in>read_write_utils.h</in>
+                      <in>reverse.h</in>
+                    </df>
+                    <df name="ngram">
+                      <in>bitmap-index.h</in>
+                      <in>ngram-fst.h</in>
+                      <in>nthbit.h</in>
+                    </df>
+                    <df name="pdt">
+                      <in>collection.h</in>
+                      <in>compose.h</in>
+                      <in>expand.h</in>
+                      <in>getters.h</in>
+                      <in>info.h</in>
+                      <in>paren.h</in>
+                      <in>pdt.h</in>
+                      <in>pdtlib.h</in>
+                      <in>pdtscript.h</in>
+                      <in>replace.h</in>
+                      <in>reverse.h</in>
+                      <in>shortest-path.h</in>
+                    </df>
+                    <df name="special">
+                      <in>phi-fst.h</in>
+                      <in>rho-fst.h</in>
+                      <in>sigma-fst.h</in>
+                    </df>
+                  </df>
+                  <df name="script">
+                    <in>arc-class.h</in>
+                    <in>arciterator-class.h</in>
+                    <in>arcsort.h</in>
+                    <in>arg-packs.h</in>
+                    <in>closure.h</in>
+                    <in>compile-impl.h</in>
+                    <in>compile.h</in>
+                    <in>compose.h</in>
+                    <in>concat.h</in>
+                    <in>connect.h</in>
+                    <in>convert.h</in>
+                    <in>decode.h</in>
+                    <in>determinize.h</in>
+                    <in>difference.h</in>
+                    <in>disambiguate.h</in>
+                    <in>draw-impl.h</in>
+                    <in>draw.h</in>
+                    <in>encode.h</in>
+                    <in>encodemapper-class.h</in>
+                    <in>epsnormalize.h</in>
+                    <in>equal.h</in>
+                    <in>equivalent.h</in>
+                    <in>fst-class.h</in>
+                    <in>fstscript-decl.h</in>
+                    <in>fstscript.h</in>
+                    <in>getters.h</in>
+                    <in>info-impl.h</in>
+                    <in>info.h</in>
+                    <in>intersect.h</in>
+                    <in>invert.h</in>
+                    <in>isomorphic.h</in>
+                    <in>map.h</in>
+                    <in>minimize.h</in>
+                    <in>print-impl.h</in>
+                    <in>print.h</in>
+                    <in>project.h</in>
+                    <in>prune.h</in>
+                    <in>push.h</in>
+                    <in>randequivalent.h</in>
+                    <in>randgen.h</in>
+                    <in>register.h</in>
+                    <in>relabel.h</in>
+                    <in>replace.h</in>
+                    <in>reverse.h</in>
+                    <in>reweight.h</in>
+                    <in>rmepsilon.h</in>
+                    <in>script-impl.h</in>
+                    <in>shortest-distance.h</in>
+                    <in>shortest-path.h</in>
+                    <in>stateiterator-class.h</in>
+                    <in>synchronize.h</in>
+                    <in>text-io.h</in>
+                    <in>topsort.h</in>
+                    <in>union.h</in>
+                    <in>verify.h</in>
+                    <in>weight-class.h</in>
+                  </df>
+                  <in>accumulator.h</in>
+                  <in>add-on.h</in>
+                  <in>arc-arena.h</in>
+                  <in>arc-map.h</in>
+                  <in>arc.h</in>
+                  <in>arcfilter.h</in>
+                  <in>arcsort.h</in>
+                  <in>bi-table.h</in>
+                  <in>cache.h</in>
+                  <in>closure.h</in>
+                  <in>compact-fst.h</in>
+                  <in>compat.h</in>
+                  <in>complement.h</in>
+                  <in>compose-filter.h</in>
+                  <in>compose.h</in>
+                  <in>concat.h</in>
+                  <in>config.h</in>
+                  <in>connect.h</in>
+                  <in>const-fst.h</in>
+                  <in>determinize.h</in>
+                  <in>dfs-visit.h</in>
+                  <in>difference.h</in>
+                  <in>disambiguate.h</in>
+                  <in>edit-fst.h</in>
+                  <in>encode.h</in>
+                  <in>epsnormalize.h</in>
+                  <in>equal.h</in>
+                  <in>equivalent.h</in>
+                  <in>expanded-fst.h</in>
+                  <in>expectation-weight.h</in>
+                  <in>factor-weight.h</in>
+                  <in>filter-state.h</in>
+                  <in>flags.h</in>
+                  <in>float-weight.h</in>
+                  <in>fst-decl.h</in>
+                  <in>fst.h</in>
+                  <in>fstlib.h</in>
+                  <in>generic-register.h</in>
+                  <in>heap.h</in>
+                  <in>icu.h</in>
+                  <in>intersect.h</in>
+                  <in>interval-set.h</in>
+                  <in>invert.h</in>
+                  <in>isomorphic.h</in>
+                  <in>label-reachable.h</in>
+                  <in>lexicographic-weight.h</in>
+                  <in>lock.h</in>
+                  <in>log.h</in>
+                  <in>lookahead-filter.h</in>
+                  <in>lookahead-matcher.h</in>
+                  <in>map.h</in>
+                  <in>mapped-file.h</in>
+                  <in>matcher-fst.h</in>
+                  <in>matcher.h</in>
+                  <in>memory.h</in>
+                  <in>minimize.h</in>
+                  <in>mutable-fst.h</in>
+                  <in>pair-weight.h</in>
+                  <in>partition.h</in>
+                  <in>power-weight.h</in>
+                  <in>product-weight.h</in>
+                  <in>project.h</in>
+                  <in>properties.h</in>
+                  <in>prune.h</in>
+                  <in>push.h</in>
+                  <in>queue.h</in>
+                  <in>randequivalent.h</in>
+                  <in>randgen.h</in>
+                  <in>rational.h</in>
+                  <in>register.h</in>
+                  <in>relabel.h</in>
+                  <in>replace-util.h</in>
+                  <in>replace.h</in>
+                  <in>reverse.h</in>
+                  <in>reweight.h</in>
+                  <in>rmepsilon.h</in>
+                  <in>rmfinalepsilon.h</in>
+                  <in>set-weight.h</in>
+                  <in>shortest-distance.h</in>
+                  <in>shortest-path.h</in>
+                  <in>signed-log-weight.h</in>
+                  <in>sparse-power-weight.h</in>
+                  <in>sparse-tuple-weight.h</in>
+                  <in>state-map.h</in>
+                  <in>state-reachable.h</in>
+                  <in>state-table.h</in>
+                  <in>statesort.h</in>
+                  <in>string-weight.h</in>
+                  <in>string.h</in>
+                  <in>symbol-table-ops.h</in>
+                  <in>symbol-table.h</in>
+                  <in>synchronize.h</in>
+                  <in>test-properties.h</in>
+                  <in>topsort.h</in>
+                  <in>tuple-weight.h</in>
+                  <in>types.h</in>
+                  <in>union-find.h</in>
+                  <in>union-weight.h</in>
+                  <in>union.h</in>
+                  <in>util.h</in>
+                  <in>vector-fst.h</in>
+                  <in>verify.h</in>
+                  <in>visit.h</in>
+                  <in>weight.h</in>
+                </df>
+              </df>
+              <df name="lib">
+                <in>compat.cc</in>
+                <in>flags.cc</in>
+                <in>fst-types.cc</in>
+                <in>fst.cc</in>
+                <in>mapped-file.cc</in>
+                <in>properties.cc</in>
+                <in>symbol-table-ops.cc</in>
+                <in>symbol-table.cc</in>
+                <in>util.cc</in>
+                <in>weight.cc</in>
+              </df>
+              <df name="script">
+                <in>arciterator-class.cc</in>
+                <in>arcsort.cc</in>
+                <in>closure.cc</in>
+                <in>compile.cc</in>
+                <in>compose.cc</in>
+                <in>concat.cc</in>
+                <in>connect.cc</in>
+                <in>convert.cc</in>
+                <in>decode.cc</in>
+                <in>determinize.cc</in>
+                <in>difference.cc</in>
+                <in>disambiguate.cc</in>
+                <in>draw.cc</in>
+                <in>encode.cc</in>
+                <in>encodemapper-class.cc</in>
+                <in>epsnormalize.cc</in>
+                <in>equal.cc</in>
+                <in>equivalent.cc</in>
+                <in>fst-class.cc</in>
+                <in>getters.cc</in>
+                <in>info-impl.cc</in>
+                <in>info.cc</in>
+                <in>intersect.cc</in>
+                <in>invert.cc</in>
+                <in>isomorphic.cc</in>
+                <in>map.cc</in>
+                <in>minimize.cc</in>
+                <in>print.cc</in>
+                <in>project.cc</in>
+                <in>prune.cc</in>
+                <in>push.cc</in>
+                <in>randequivalent.cc</in>
+                <in>randgen.cc</in>
+                <in>relabel.cc</in>
+                <in>replace.cc</in>
+                <in>reverse.cc</in>
+                <in>reweight.cc</in>
+                <in>rmepsilon.cc</in>
+                <in>shortest-distance.cc</in>
+                <in>shortest-path.cc</in>
+                <in>stateiterator-class.cc</in>
+                <in>synchronize.cc</in>
+                <in>text-io.cc</in>
+                <in>topsort.cc</in>
+                <in>union.cc</in>
+                <in>verify.cc</in>
+                <in>weight-class.cc</in>
+              </df>
+              <df name="test">
+                <in>algo_test.cc</in>
+                <in>algo_test.h</in>
+                <in>fst_test.cc</in>
+                <in>fst_test.h</in>
+                <in>rand-fst.h</in>
+                <in>weight-tester.h</in>
+                <in>weight_test.cc</in>
+              </df>
+            </df>
+          </df>
+          <df name="openfst-1.6.9-win">
+            <df name="m4">
+            </df>
+            <df name="src">
+              <df name="bin">
+                <in>fstarcsort-main.cc</in>
+                <in>fstarcsort.cc</in>
+                <in>fstclosure-main.cc</in>
+                <in>fstclosure.cc</in>
+                <in>fstcompile-main.cc</in>
+                <in>fstcompile.cc</in>
+                <in>fstcompose-main.cc</in>
+                <in>fstcompose.cc</in>
+                <in>fstconcat-main.cc</in>
+                <in>fstconcat.cc</in>
+                <in>fstconnect-main.cc</in>
+                <in>fstconnect.cc</in>
+                <in>fstconvert-main.cc</in>
+                <in>fstconvert.cc</in>
+                <in>fstdeterminize-main.cc</in>
+                <in>fstdeterminize.cc</in>
+                <in>fstdifference-main.cc</in>
+                <in>fstdifference.cc</in>
+                <in>fstdisambiguate-main.cc</in>
+                <in>fstdisambiguate.cc</in>
+                <in>fstdraw-main.cc</in>
+                <in>fstdraw.cc</in>
+                <in>fstencode-main.cc</in>
+                <in>fstencode.cc</in>
+                <in>fstepsnormalize-main.cc</in>
+                <in>fstepsnormalize.cc</in>
+                <in>fstequal-main.cc</in>
+                <in>fstequal.cc</in>
+                <in>fstequivalent-main.cc</in>
+                <in>fstequivalent.cc</in>
+                <in>fstinfo-main.cc</in>
+                <in>fstinfo.cc</in>
+                <in>fstintersect-main.cc</in>
+                <in>fstintersect.cc</in>
+                <in>fstinvert-main.cc</in>
+                <in>fstinvert.cc</in>
+                <in>fstisomorphic-main.cc</in>
+                <in>fstisomorphic.cc</in>
+                <in>fstmap-main.cc</in>
+                <in>fstmap.cc</in>
+                <in>fstminimize-main.cc</in>
+                <in>fstminimize.cc</in>
+                <in>fstprint-main.cc</in>
+                <in>fstprint.cc</in>
+                <in>fstproject-main.cc</in>
+                <in>fstproject.cc</in>
+                <in>fstprune-main.cc</in>
+                <in>fstprune.cc</in>
+                <in>fstpush-main.cc</in>
+                <in>fstpush.cc</in>
+                <in>fstrandgen-main.cc</in>
+                <in>fstrandgen.cc</in>
+                <in>fstrelabel-main.cc</in>
+                <in>fstrelabel.cc</in>
+                <in>fstreplace-main.cc</in>
+                <in>fstreplace.cc</in>
+                <in>fstreverse-main.cc</in>
+                <in>fstreverse.cc</in>
+                <in>fstreweight-main.cc</in>
+                <in>fstreweight.cc</in>
+                <in>fstrmepsilon-main.cc</in>
+                <in>fstrmepsilon.cc</in>
+                <in>fstshortestdistance-main.cc</in>
+                <in>fstshortestdistance.cc</in>
+                <in>fstshortestpath-main.cc</in>
+                <in>fstshortestpath.cc</in>
+                <in>fstsymbols-main.cc</in>
+                <in>fstsymbols.cc</in>
+                <in>fstsynchronize-main.cc</in>
+                <in>fstsynchronize.cc</in>
+                <in>fsttopsort-main.cc</in>
+                <in>fsttopsort.cc</in>
+                <in>fstunion-main.cc</in>
+                <in>fstunion.cc</in>
+              </df>
+              <df name="extensions">
+                <df name="compact">
+                  <in>compact16_acceptor-fst.cc</in>
+                  <in>compact16_string-fst.cc</in>
+                  <in>compact16_unweighted-fst.cc</in>
+                  <in>compact16_unweighted_acceptor-fst.cc</in>
+                  <in>compact16_weighted_string-fst.cc</in>
+                  <in>compact64_acceptor-fst.cc</in>
+                  <in>compact64_string-fst.cc</in>
+                  <in>compact64_unweighted-fst.cc</in>
+                  <in>compact64_unweighted_acceptor-fst.cc</in>
+                  <in>compact64_weighted_string-fst.cc</in>
+                  <in>compact8_acceptor-fst.cc</in>
+                  <in>compact8_string-fst.cc</in>
+                  <in>compact8_unweighted-fst.cc</in>
+                  <in>compact8_unweighted_acceptor-fst.cc</in>
+                  <in>compact8_weighted_string-fst.cc</in>
+                </df>
+                <df name="compress">
+                  <in>compress-script.cc</in>
+                  <in>fstcompress.cc</in>
+                  <in>fstrandmod.cc</in>
+                </df>
+                <df name="const">
+                  <in>const16-fst.cc</in>
+                  <in>const64-fst.cc</in>
+                  <in>const8-fst.cc</in>
+                </df>
+                <df name="far">
+                  <in>far-class.cc</in>
+                  <in>farcompilestrings.cc</in>
+                  <in>farcreate.cc</in>
+                  <in>farequal.cc</in>
+                  <in>farextract.cc</in>
+                  <in>farinfo.cc</in>
+                  <in>farisomorphic.cc</in>
+                  <in>farprintstrings.cc</in>
+                  <in>farscript.cc</in>
+                  <in>getters.cc</in>
+                  <in>script-impl.cc</in>
+                  <in>stlist.cc</in>
+                  <in>strings.cc</in>
+                  <in>sttable.cc</in>
+                </df>
+                <df name="linear">
+                  <in>fstlinear.cc</in>
+                  <in>fstloglinearapply.cc</in>
+                  <in>linear-classifier-fst.cc</in>
+                  <in>linear-tagger-fst.cc</in>
+                  <in>linearscript.cc</in>
+                </df>
+                <df name="lookahead">
+                  <in>arc_lookahead-fst.cc</in>
+                  <in>ilabel_lookahead-fst.cc</in>
+                  <in>olabel_lookahead-fst.cc</in>
+                </df>
+                <df name="mpdt">
+                  <in>mpdtcompose.cc</in>
+                  <in>mpdtexpand.cc</in>
+                  <in>mpdtinfo.cc</in>
+                  <in>mpdtreverse.cc</in>
+                  <in>mpdtscript.cc</in>
+                </df>
+                <df name="ngram">
+                  <in>bitmap-index.cc</in>
+                  <in>ngram-fst.cc</in>
+                  <in>nthbit.cc</in>
+                </df>
+                <df name="pdt">
+                  <in>getters.cc</in>
+                  <in>pdtcompose.cc</in>
+                  <in>pdtexpand.cc</in>
+                  <in>pdtinfo.cc</in>
+                  <in>pdtreplace.cc</in>
+                  <in>pdtreverse.cc</in>
+                  <in>pdtscript.cc</in>
+                  <in>pdtshortestpath.cc</in>
+                </df>
+                <df name="python">
+                  <in>pywrapfst.cc</in>
+                </df>
+                <df name="special">
+                  <in>fstspecial.cc</in>
+                  <in>phi-fst.cc</in>
+                  <in>rho-fst.cc</in>
+                  <in>sigma-fst.cc</in>
+                </df>
+              </df>
+              <df name="include">
+                <df name="fst">
+                  <df name="extensions">
+                    <df name="compress">
+                      <in>compress-script.h</in>
+                      <in>compress.h</in>
+                      <in>elias.h</in>
+                      <in>gzfile.h</in>
+                      <in>randmod.h</in>
+                    </df>
+                    <df name="far">
+                      <in>compile-strings.h</in>
+                      <in>create.h</in>
+                      <in>equal.h</in>
+                      <in>extract.h</in>
+                      <in>far-class.h</in>
+                      <in>far.h</in>
+                      <in>farlib.h</in>
+                      <in>farscript.h</in>
+                      <in>getters.h</in>
+                      <in>info.h</in>
+                      <in>isomorphic.h</in>
+                      <in>print-strings.h</in>
+                      <in>script-impl.h</in>
+                      <in>stlist.h</in>
+                      <in>sttable.h</in>
+                    </df>
+                    <df name="linear">
+                      <in>linear-fst-data-builder.h</in>
+                      <in>linear-fst-data.h</in>
+                      <in>linear-fst.h</in>
+                      <in>linearscript.h</in>
+                      <in>loglinear-apply.h</in>
+                      <in>trie.h</in>
+                    </df>
+                    <df name="mpdt">
+                      <in>compose.h</in>
+                      <in>expand.h</in>
+                      <in>info.h</in>
+                      <in>mpdt.h</in>
+                      <in>mpdtlib.h</in>
+                      <in>mpdtscript.h</in>
+                      <in>read_write_utils.h</in>
+                      <in>reverse.h</in>
+                    </df>
+                    <df name="ngram">
+                      <in>bitmap-index.h</in>
+                      <in>ngram-fst.h</in>
+                      <in>nthbit.h</in>
+                    </df>
+                    <df name="pdt">
+                      <in>collection.h</in>
+                      <in>compose.h</in>
+                      <in>expand.h</in>
+                      <in>getters.h</in>
+                      <in>info.h</in>
+                      <in>paren.h</in>
+                      <in>pdt.h</in>
+                      <in>pdtlib.h</in>
+                      <in>pdtscript.h</in>
+                      <in>replace.h</in>
+                      <in>reverse.h</in>
+                      <in>shortest-path.h</in>
+                    </df>
+                    <df name="special">
+                      <in>phi-fst.h</in>
+                      <in>rho-fst.h</in>
+                      <in>sigma-fst.h</in>
+                    </df>
+                  </df>
+                  <df name="script">
+                    <in>arc-class.h</in>
+                    <in>arciterator-class.h</in>
+                    <in>arcsort.h</in>
+                    <in>arg-packs.h</in>
+                    <in>closure.h</in>
+                    <in>compile-impl.h</in>
+                    <in>compile.h</in>
+                    <in>compose.h</in>
+                    <in>concat.h</in>
+                    <in>connect.h</in>
+                    <in>convert.h</in>
+                    <in>decode.h</in>
+                    <in>determinize.h</in>
+                    <in>difference.h</in>
+                    <in>disambiguate.h</in>
+                    <in>draw-impl.h</in>
+                    <in>draw.h</in>
+                    <in>encode.h</in>
+                    <in>encodemapper-class.h</in>
+                    <in>epsnormalize.h</in>
+                    <in>equal.h</in>
+                    <in>equivalent.h</in>
+                    <in>fst-class.h</in>
+                    <in>fstscript-decl.h</in>
+                    <in>fstscript.h</in>
+                    <in>getters.h</in>
+                    <in>info-impl.h</in>
+                    <in>info.h</in>
+                    <in>intersect.h</in>
+                    <in>invert.h</in>
+                    <in>isomorphic.h</in>
+                    <in>map.h</in>
+                    <in>minimize.h</in>
+                    <in>print-impl.h</in>
+                    <in>print.h</in>
+                    <in>project.h</in>
+                    <in>prune.h</in>
+                    <in>push.h</in>
+                    <in>randequivalent.h</in>
+                    <in>randgen.h</in>
+                    <in>register.h</in>
+                    <in>relabel.h</in>
+                    <in>replace.h</in>
+                    <in>reverse.h</in>
+                    <in>reweight.h</in>
+                    <in>rmepsilon.h</in>
+                    <in>script-impl.h</in>
+                    <in>shortest-distance.h</in>
+                    <in>shortest-path.h</in>
+                    <in>stateiterator-class.h</in>
+                    <in>synchronize.h</in>
+                    <in>text-io.h</in>
+                    <in>topsort.h</in>
+                    <in>union.h</in>
+                    <in>verify.h</in>
+                    <in>weight-class.h</in>
+                  </df>
+                  <df name="test">
+                    <in>algo_test.h</in>
+                    <in>fst_test.h</in>
+                    <in>rand-fst.h</in>
+                    <in>weight-tester.h</in>
+                  </df>
+                  <in>accumulator.h</in>
+                  <in>add-on.h</in>
+                  <in>algo_test.h</in>
+                  <in>arc-arena.h</in>
+                  <in>arc-map.h</in>
+                  <in>arc.h</in>
+                  <in>arcfilter.h</in>
+                  <in>arcsort.h</in>
+                  <in>bi-table.h</in>
+                  <in>cache.h</in>
+                  <in>closure.h</in>
+                  <in>collection.h</in>
+                  <in>compact-fst.h</in>
+                  <in>compat.h</in>
+                  <in>complement.h</in>
+                  <in>compose (1).h</in>
+                  <in>compose (2).h</in>
+                  <in>compose-filter.h</in>
+                  <in>compose.h</in>
+                  <in>concat.h</in>
+                  <in>config.h</in>
+                  <in>connect.h</in>
+                  <in>const-fst.h</in>
+                  <in>determinize.h</in>
+                  <in>dfs-visit.h</in>
+                  <in>difference.h</in>
+                  <in>disambiguate.h</in>
+                  <in>edit-fst.h</in>
+                  <in>encode.h</in>
+                  <in>epsnormalize.h</in>
+                  <in>equal.h</in>
+                  <in>equivalent.h</in>
+                  <in>expand.h</in>
+                  <in>expanded-fst.h</in>
+                  <in>expectation-weight.h</in>
+                  <in>factor-weight.h</in>
+                  <in>filter-state.h</in>
+                  <in>flags.h</in>
+                  <in>float-weight.h</in>
+                  <in>fst-decl.h</in>
+                  <in>fst.h</in>
+                  <in>fstlib.h</in>
+                  <in>generic-register.h</in>
+                  <in>heap.h</in>
+                  <in>icu.h</in>
+                  <in>intersect.h</in>
+                  <in>interval-set.h</in>
+                  <in>invert.h</in>
+                  <in>isomorphic.h</in>
+                  <in>label-reachable.h</in>
+                  <in>lexicographic-weight.h</in>
+                  <in>linear-fst.h</in>
+                  <in>lock.h</in>
+                  <in>log.h</in>
+                  <in>lookahead-filter.h</in>
+                  <in>lookahead-matcher.h</in>
+                  <in>map.h</in>
+                  <in>mapped-file.h</in>
+                  <in>matcher-fst.h</in>
+                  <in>matcher.h</in>
+                  <in>memory.h</in>
+                  <in>minimize.h</in>
+                  <in>mpdt.h</in>
+                  <in>mutable-fst.h</in>
+                  <in>ngram-fst.h</in>
+                  <in>pair-weight.h</in>
+                  <in>paren.h</in>
+                  <in>partition.h</in>
+                  <in>pdt.h</in>
+                  <in>power-weight.h</in>
+                  <in>product-weight.h</in>
+                  <in>project.h</in>
+                  <in>properties.h</in>
+                  <in>prune.h</in>
+                  <in>push.h</in>
+                  <in>queue.h</in>
+                  <in>randequivalent.h</in>
+                  <in>randgen.h</in>
+                  <in>rational.h</in>
+                  <in>register.h</in>
+                  <in>relabel.h</in>
+                  <in>replace-util.h</in>
+                  <in>replace.h</in>
+                  <in>reverse.h</in>
+                  <in>reweight.h</in>
+                  <in>rmepsilon.h</in>
+                  <in>rmfinalepsilon.h</in>
+                  <in>set-weight.h</in>
+                  <in>shortest-distance.h</in>
+                  <in>shortest-path.h</in>
+                  <in>signed-log-weight.h</in>
+                  <in>sparse-power-weight.h</in>
+                  <in>sparse-tuple-weight.h</in>
+                  <in>state-map.h</in>
+                  <in>state-reachable.h</in>
+                  <in>state-table.h</in>
+                  <in>statesort.h</in>
+                  <in>string-weight.h</in>
+                  <in>string.h</in>
+                  <in>symbol-table-ops.h</in>
+                  <in>symbol-table.h</in>
+                  <in>synchronize.h</in>
+                  <in>test-properties.h</in>
+                  <in>topsort.h</in>
+                  <in>tuple-weight.h</in>
+                  <in>types.h</in>
+                  <in>union-find.h</in>
+                  <in>union-weight.h</in>
+                  <in>union.h</in>
+                  <in>util.h</in>
+                  <in>vector-fst.h</in>
+                  <in>verify.h</in>
+                  <in>visit.h</in>
+                  <in>weight.h</in>
+                </df>
+              </df>
+              <df name="lib">
+                <in>compat.cc</in>
+                <in>flags.cc</in>
+                <in>fst-types.cc</in>
+                <in>fst.cc</in>
+                <in>mapped-file.cc</in>
+                <in>properties.cc</in>
+                <in>symbol-table-ops.cc</in>
+                <in>symbol-table.cc</in>
+                <in>util.cc</in>
+                <in>weight.cc</in>
+              </df>
+              <df name="script">
+                <in>arciterator-class.cc</in>
+                <in>arcsort.cc</in>
+                <in>closure.cc</in>
+                <in>compile.cc</in>
+                <in>compose.cc</in>
+                <in>concat.cc</in>
+                <in>connect.cc</in>
+                <in>convert.cc</in>
+                <in>decode.cc</in>
+                <in>determinize.cc</in>
+                <in>difference.cc</in>
+                <in>disambiguate.cc</in>
+                <in>draw.cc</in>
+                <in>encode.cc</in>
+                <in>encodemapper-class.cc</in>
+                <in>epsnormalize.cc</in>
+                <in>equal.cc</in>
+                <in>equivalent.cc</in>
+                <in>fst-class.cc</in>
+                <in>getters.cc</in>
+                <in>info-impl.cc</in>
+                <in>info.cc</in>
+                <in>intersect.cc</in>
+                <in>invert.cc</in>
+                <in>isomorphic.cc</in>
+                <in>map.cc</in>
+                <in>minimize.cc</in>
+                <in>print.cc</in>
+                <in>project.cc</in>
+                <in>prune.cc</in>
+                <in>push.cc</in>
+                <in>randequivalent.cc</in>
+                <in>randgen.cc</in>
+                <in>relabel.cc</in>
+                <in>replace.cc</in>
+                <in>reverse.cc</in>
+                <in>reweight.cc</in>
+                <in>rmepsilon.cc</in>
+                <in>shortest-distance.cc</in>
+                <in>shortest-path.cc</in>
+                <in>stateiterator-class.cc</in>
+                <in>synchronize.cc</in>
+                <in>text-io.cc</in>
+                <in>topsort.cc</in>
+                <in>union.cc</in>
+                <in>verify.cc</in>
+                <in>weight-class.cc</in>
+              </df>
+              <df name="test">
+                <in>algo_test.cc</in>
+                <in>fst_test.cc</in>
+                <in>weight_test.cc</in>
+              </df>
+            </df>
+          </df>
+          <df name="ThreadPool">
+            <in>ThreadPool.h</in>
+            <in>example.cpp</in>
+          </df>
+        </df>
+        <in>ctc_beam_search_decoder.cpp</in>
+        <in>ctc_beam_search_decoder.h</in>
+        <in>decoder_utils.cpp</in>
+        <in>decoder_utils.h</in>
+        <in>decoderstate.h</in>
+        <in>numpy.i</in>
+        <in>output.h</in>
+        <in>path_trie.cpp</in>
+        <in>path_trie.h</in>
+        <in>scorer.cpp</in>
+        <in>scorer.h</in>
+        <in>swigwrapper.i</in>
+      </df>
+      <df name="dotnet">
+        <df name="DeepSpeechClient">
+          <df name="Enums">
+          </df>
+          <df name="Extensions">
+          </df>
+          <df name="Interfaces">
+          </df>
+          <df name="Models">
+          </df>
+          <df name="Properties">
+          </df>
+          <df name="Structs">
+          </df>
+        </df>
+        <df name="DeepSpeechConsole">
+          <df name="Properties">
+          </df>
+        </df>
+        <df name="nupkg">
+          <df name="build">
+          </df>
+          <df name="lib">
+            <df name="net45">
+            </df>
+            <df name="net46">
+            </df>
+            <df name="net47">
+            </df>
+          </df>
+          <df name="tools">
+          </df>
+        </df>
+      </df>
+      <df name="java">
+        <df name=".gradle">
+          <df name="4.10.1">
+            <df name="fileChanges">
+            </df>
+            <df name="fileHashes">
+            </df>
+            <df name="taskHistory">
+            </df>
+            <df name="vcsMetadata-1">
+            </df>
+          </df>
+          <df name="4.6">
+            <df name="fileChanges">
+            </df>
+            <df name="fileContent">
+            </df>
+            <df name="fileHashes">
+            </df>
+            <df name="javaCompile">
+            </df>
+            <df name="taskHistory">
+            </df>
+          </df>
+          <df name="buildOutputCleanup">
+          </df>
+          <df name="vcs-1">
+          </df>
+          <df name="vcsWorkingDirs">
+          </df>
+        </df>
+        <df name=".idea">
+          <df name="caches">
+          </df>
+          <df name="codeStyles">
+          </df>
+          <df name="libraries">
+          </df>
+        </df>
+        <df name="app">
+          <df name=".externalNativeBuild">
+            <df name="cmake">
+              <df name="debug">
+                <df name="arm64-v8a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+                <df name="armeabi-v7a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+              </df>
+              <df name="release">
+                <df name="arm64-v8a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+                <df name="armeabi-v7a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="src">
+            <df name="androidTest">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="main">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="res">
+                <df name="drawable">
+                </df>
+                <df name="drawable-v24">
+                </df>
+                <df name="layout">
+                </df>
+                <df name="mipmap-anydpi-v26">
+                </df>
+                <df name="mipmap-hdpi">
+                </df>
+                <df name="mipmap-mdpi">
+                </df>
+                <df name="mipmap-xhdpi">
+                </df>
+                <df name="mipmap-xxhdpi">
+                </df>
+                <df name="mipmap-xxxhdpi">
+                </df>
+                <df name="values">
+                </df>
+              </df>
+            </df>
+            <df name="test">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="gradle">
+          <df name="wrapper">
+          </df>
+        </df>
+        <df name="jni">
+          <in>deepspeech.i</in>
+        </df>
+        <df name="libdeepspeech">
+          <df name=".externalNativeBuild">
+            <df name="cmake">
+              <df name="debug">
+                <df name="arm64-v8a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <df name="deepspeech-jni.dir">
+                      <df name="srv">
+                        <df name="vobs">
+                          <df name="DeepSpeech">
+                            <df name="native_client">
+                              <df name="java">
+                                <df name="jni">
+                                </df>
+                              </df>
+                            </df>
+                          </df>
+                        </df>
+                      </df>
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+              </df>
+              <df name="release">
+                <df name="arm64-v8a">
+                  <df name="CMakeFiles">
+                    <df name="3.6.0-rc2">
+                    </df>
+                    <df name="CMakeTmp">
+                    </df>
+                    <df name="deepspeech-jni.dir">
+                      <df name="srv">
+                        <df name="vobs">
+                          <df name="DeepSpeech">
+                            <df name="native_client">
+                              <df name="java">
+                                <df name="jni">
+                                </df>
+                              </df>
+                            </df>
+                          </df>
+                        </df>
+                      </df>
+                    </df>
+                    <in>feature_tests.c</in>
+                    <in>feature_tests.cxx</in>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="libs">
+            <df name="arm64-v8a">
+            </df>
+          </df>
+          <df name="src">
+            <df name="androidTest">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                      <df name="libdeepspeech">
+                        <df name="test">
+                        </df>
+                      </df>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="main">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                      <df name="libdeepspeech">
+                      </df>
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="res">
+                <df name="values">
+                </df>
+              </df>
+            </df>
+            <df name="test">
+              <df name="java">
+                <df name="org">
+                  <df name="mozilla">
+                    <df name="deepspeech">
+                      <df name="libdeepspeech">
+                      </df>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="javascript">
+        <in>deepspeech.i</in>
+      </df>
+      <df name="kenlm">
+        <df name="cmake">
+          <df name="modules">
+          </df>
+        </df>
+        <df name="lm">
+          <df name="common">
+            <df name="test_data">
+            </df>
+            <in>compare.hh</in>
+            <in>joint_order.hh</in>
+            <in>model_buffer.cc</in>
+            <in>model_buffer.hh</in>
+            <in>model_buffer_test.cc</in>
+            <in>ngram.hh</in>
+            <in>ngram_stream.hh</in>
+            <in>print.cc</in>
+            <in>print.hh</in>
+            <in>renumber.cc</in>
+            <in>renumber.hh</in>
+            <in>size_option.cc</in>
+            <in>size_option.hh</in>
+            <in>special.hh</in>
+          </df>
+          <df name="interpolate">
+            <df name="merge_test">
+            </df>
+            <in>backoff_matrix.hh</in>
+            <in>backoff_reunification.cc</in>
+            <in>backoff_reunification.hh</in>
+            <in>backoff_reunification_test.cc</in>
+            <in>bounded_sequence_encoding.cc</in>
+            <in>bounded_sequence_encoding.hh</in>
+            <in>bounded_sequence_encoding_test.cc</in>
+            <in>interpolate_info.hh</in>
+            <in>interpolate_main.cc</in>
+            <in>merge_probabilities.cc</in>
+            <in>merge_probabilities.hh</in>
+            <in>merge_vocab.cc</in>
+            <in>merge_vocab.hh</in>
+            <in>merge_vocab_test.cc</in>
+            <in>normalize.cc</in>
+            <in>normalize.hh</in>
+            <in>normalize_test.cc</in>
+            <in>pipeline.cc</in>
+            <in>pipeline.hh</in>
+            <in>split_worker.cc</in>
+            <in>split_worker.hh</in>
+            <in>streaming_example_main.cc</in>
+            <in>tune_derivatives.cc</in>
+            <in>tune_derivatives.hh</in>
+            <in>tune_derivatives_test.cc</in>
+            <in>tune_instances.cc</in>
+            <in>tune_instances.hh</in>
+            <in>tune_instances_test.cc</in>
+            <in>tune_matrix.hh</in>
+            <in>tune_weights.cc</in>
+            <in>tune_weights.hh</in>
+            <in>universal_vocab.cc</in>
+            <in>universal_vocab.hh</in>
+          </df>
+          <df name="wrappers">
+            <in>nplm.cc</in>
+            <in>nplm.hh</in>
+          </df>
+          <in>bhiksha.cc</in>
+          <in>bhiksha.hh</in>
+          <in>binary_format.cc</in>
+          <in>binary_format.hh</in>
+          <in>blank.hh</in>
+          <in>build_binary_main.cc</in>
+          <in>config.cc</in>
+          <in>config.hh</in>
+          <in>enumerate_vocab.hh</in>
+          <in>facade.hh</in>
+          <in>fragment_main.cc</in>
+          <in>kenlm_benchmark_main.cc</in>
+          <in>left.hh</in>
+          <in>left_test.cc</in>
+          <in>lm_exception.cc</in>
+          <in>lm_exception.hh</in>
+          <in>max_order.hh</in>
+          <in>model.cc</in>
+          <in>model.hh</in>
+          <in>model_test.cc</in>
+          <in>model_type.hh</in>
+          <in>ngram_query.hh</in>
+          <in>partial.hh</in>
+          <in>partial_test.cc</in>
+          <in>quantize.cc</in>
+          <in>quantize.hh</in>
+          <in>query_main.cc</in>
+          <in>read_arpa.cc</in>
+          <in>read_arpa.hh</in>
+          <in>return.hh</in>
+          <in>search_hashed.cc</in>
+          <in>search_hashed.hh</in>
+          <in>search_trie.cc</in>
+          <in>search_trie.hh</in>
+          <in>sizes.cc</in>
+          <in>sizes.hh</in>
+          <in>state.hh</in>
+          <in>trie.cc</in>
+          <in>trie.hh</in>
+          <in>trie_sort.cc</in>
+          <in>trie_sort.hh</in>
+          <in>value.hh</in>
+          <in>value_build.cc</in>
+          <in>value_build.hh</in>
+          <in>virtual_interface.cc</in>
+          <in>virtual_interface.hh</in>
+          <in>vocab.cc</in>
+          <in>vocab.hh</in>
+          <in>weights.hh</in>
+          <in>word_index.hh</in>
+        </df>
+        <df name="util">
+          <df name="double-conversion">
+            <in>bignum-dtoa.cc</in>
+            <in>bignum-dtoa.h</in>
+            <in>bignum.cc</in>
+            <in>bignum.h</in>
+            <in>cached-powers.cc</in>
+            <in>cached-powers.h</in>
+            <in>diy-fp.cc</in>
+            <in>diy-fp.h</in>
+            <in>double-conversion.cc</in>
+            <in>double-conversion.h</in>
+            <in>fast-dtoa.cc</in>
+            <in>fast-dtoa.h</in>
+            <in>fixed-dtoa.cc</in>
+            <in>fixed-dtoa.h</in>
+            <in>ieee.h</in>
+            <in>strtod.cc</in>
+            <in>strtod.h</in>
+            <in>utils.h</in>
+          </df>
+          <in>bit_packing.cc</in>
+          <in>bit_packing.hh</in>
+          <in>bit_packing_test.cc</in>
+          <in>cat_compressed_main.cc</in>
+          <in>ersatz_progress.cc</in>
+          <in>ersatz_progress.hh</in>
+          <in>exception.cc</in>
+          <in>exception.hh</in>
+          <in>fake_ostream.hh</in>
+          <in>file.cc</in>
+          <in>file.hh</in>
+          <in>file_piece.cc</in>
+          <in>file_piece.hh</in>
+          <in>file_piece_test.cc</in>
+          <in>file_stream.hh</in>
+          <in>fixed_array.hh</in>
+          <in>float_to_string.cc</in>
+          <in>float_to_string.hh</in>
+          <in>have.hh</in>
+          <in>integer_to_string.cc</in>
+          <in>integer_to_string.hh</in>
+          <in>integer_to_string_test.cc</in>
+          <in>joint_sort.hh</in>
+          <in>joint_sort_test.cc</in>
+          <in>mmap.cc</in>
+          <in>mmap.hh</in>
+          <in>multi_intersection.hh</in>
+          <in>multi_intersection_test.cc</in>
+          <in>murmur_hash.cc</in>
+          <in>murmur_hash.hh</in>
+          <in>parallel_read.cc</in>
+          <in>parallel_read.hh</in>
+          <in>pcqueue.hh</in>
+          <in>pcqueue_test.cc</in>
+          <in>pool.cc</in>
+          <in>pool.hh</in>
+          <in>probing_hash_table.hh</in>
+          <in>probing_hash_table_benchmark_main.cc</in>
+          <in>probing_hash_table_test.cc</in>
+          <in>proxy_iterator.hh</in>
+          <in>read_compressed.cc</in>
+          <in>read_compressed.hh</in>
+          <in>read_compressed_test.cc</in>
+          <in>scoped.cc</in>
+          <in>scoped.hh</in>
+          <in>sized_iterator.hh</in>
+          <in>sized_iterator_test.cc</in>
+          <in>sorted_uniform.hh</in>
+          <in>sorted_uniform_test.cc</in>
+          <in>spaces.cc</in>
+          <in>spaces.hh</in>
+          <in>string_piece.cc</in>
+          <in>string_piece.hh</in>
+          <in>string_piece_hash.hh</in>
+          <in>string_stream.hh</in>
+          <in>string_stream_test.cc</in>
+          <in>thread_pool.hh</in>
+          <in>tokenize_piece.hh</in>
+          <in>tokenize_piece_test.cc</in>
+          <in>usage.cc</in>
+          <in>usage.hh</in>
+        </df>
+      </df>
+      <df name="models">
+      </df>
+      <df name="python">
+        <in>impl.i</in>
+        <in>numpy.i</in>
+      </df>
+      <in>alphabet.h</in>
+      <in>args.h</in>
+      <in>client.cc</in>
+      <in>deepspeech.cc</in>
+      <in>deepspeech.h</in>
+      <in>generate_trie.cpp</in>
+      <in>getopt_win.h</in>
+      <in>trie_load.cc</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem></compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem></compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

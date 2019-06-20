@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///srv/vobs/DeepSpeech/native_client/AndroidStudio/AndroidStudio.iml" filepath="/srv/vobs/DeepSpeech/native_client/AndroidStudio/AndroidStudio.iml" />
+      <module fileurl="file:///srv/vobs/DeepSpeech/native_client/AndroidStudio/app/app.iml" filepath="/srv/vobs/DeepSpeech/native_client/AndroidStudio/app/app.iml" />
+    </modules>
+  </component>
+</project>
