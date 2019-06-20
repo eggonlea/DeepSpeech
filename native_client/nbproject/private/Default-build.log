@@ -1,0 +1,6 @@
+c++   -std=c++11 -o deepspeech `pkg-config --cflags sox` client.cc  -Wl,--no-as-needed -Wl,-rpath,\$ORIGIN -L/srv/vobs/tensorflow/bazel-bin/native_client  -ldeepspeech  `pkg-config --libs sox`
+/usr/bin/x86_64-linux-gnu-ld: skipping incompatible /srv/vobs/tensorflow/bazel-bin/native_client/libdeepspeech.so when searching for -ldeepspeech
+/usr/bin/x86_64-linux-gnu-ld: cannot find -ldeepspeech
+collect2: error: ld returned 1 exit status
+Makefile:22: recipe for target 'deepspeech' failed
+make: *** [deepspeech] Error 1

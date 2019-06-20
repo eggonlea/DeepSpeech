@@ -1,0 +1,17 @@
+/libs
+/obj
+/models
+/ctcdecode/common.a
+/ctcdecode/dist/
+/ctcdecode/ds_ctcdecoder.egg-info/
+/ctcdecode/swigwrapper.py
+/ctcdecode/swigwrapper_wrap.cpp
+/deepspeech
+/python/MANIFEST.in
+/python/deepspeech.egg-info/
+/python/dist/
+/python/impl.py
+/python/impl_wrap.cpp
+/convert_graphdef_memmapped_format
+/libdeepspeech.so
+/generate_trie

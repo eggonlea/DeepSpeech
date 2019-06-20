@@ -1,0 +1,13 @@
+called: /usr/bin/c++
+	/srv/vobs/DeepSpeech/native_client
+	c++
+	-std=c++11
+	-o
+	deepspeech
+	client.cc
+	-Wl,--no-as-needed
+	-Wl,-rpath,$ORIGIN
+	-L/srv/vobs/tensorflow/bazel-bin/native_client
+	-ldeepspeech
+	-lsox
+

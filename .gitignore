@@ -9,6 +9,7 @@
 /logs
 /exports
 /data/ldc93s1
+/data/ldc93s1-tc
 /native_client/setup.cfg
 /native_client/build
 /native_client/*.egg-info
@@ -20,3 +21,18 @@
 /native_client/python/utils_wrap.cpp
 /native_client/javascript/build
 /native_client/javascript/deepspeech_wrap.cxx
+/native_client/ctcdecode/common.a
+/native_client/ctcdecode/dist/
+/native_client/ctcdecode/ds_ctcdecoder.egg-info/
+/native_client/ctcdecode/swigwrapper.py
+/native_client/ctcdecode/swigwrapper_wrap.cpp
+/native_client/deepspeech
+/native_client/python/MANIFEST.in
+/native_client/python/deepspeech.egg-info/
+/native_client/python/dist/
+/native_client/python/impl.py
+/native_client/python/impl_wrap.cpp
+/native_client/convert_graphdef_memmapped_format
+/native_client/libdeepspeech.so
+/native_client/generate_trie
+/download/
